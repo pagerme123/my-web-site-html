@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>xandie</title>
-    <style>
-      /* -------------------------------- 
+style{
+    /* -------------------------------- 
 
       File#: _1_breadcrumbs
       Title: Breadcrumbs
@@ -237,34 +231,4 @@
         ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       }
       
-    </style>
-  </head>
-  <body>
-    <p class="whatthaytipe">
-      <nav class="breadcrumbs bj8-text-sm" aria-label="Breadcrumbs">
-      <ol class="bj8-flex bj8-flex-wrap bj8-gap-2xs">
-        <li class="breadcrumbs__item">
-          <a href="index.html" class="bj8-color-inherit">Home</a>
-          <span class="bj8-color-contrast-lower bj8-margin-left-2xs" aria-hidden="true">/</span>
-        </li>
-        
-        <li class="breadcrumbs__item">
-          <a href="abot me.html" class="bj8-color-inherit">abotme</a>
-          <span class="bj8-color-contrast-lower bj8-margin-left-2xs" aria-hidden="true">/</span>
-        </li>
-        
-        <li class="breadcrumbs__item">
-          <a href="fave pics.html" class="bj8-color-inherit">fave pics</a>
-          <span class="bj8-color-contrast-lower bj8-margin-left-2xs" aria-hidden="true">/</span>
-        </li>
-        
-        <li class="breadcrumbs__item" aria-current="page">Project</li>
-      </ol>
-    </nav>
-      <h5><a class="bn49" href="fave pics.html">my fav picture's/</a></h5>
-      <h5><a class="bn49" href="admin.html">admin</a></h5>
-      <h5><a class="bn49" href="abot me.html">abot me</a></h5>
-      
-    </p>
-  </body>
-</html>
+}
