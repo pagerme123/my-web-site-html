@@ -1,0 +1,271 @@
+<p>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xandie</title>
+    <style>/* -------------------------------- 
+
+      File#: _1_breadcrumbs
+      Title: Breadcrumbs
+      Descr: List of links to help the user move within website structure
+      Usage: codyhouse.co/license
+      
+      -------------------------------- */
+      /* reset */
+      *, *::after, *::before {
+        box-sizing: border-box;
+      }
+      
+      * {
+        font: inherit;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      
+      body {
+        background-color: hsl(0, 0%, 100%);
+        font-family: system-ui, sans-serif;
+        color: hsl(230, 7%, 23%);
+        font-size: 1rem;
+      }
+      
+      h1, h2, h3, h4 {
+        line-height: 1.2;
+        color: hsl(230, 13%, 9%);
+        font-weight: 700;
+      }
+      
+      h1 {
+        font-size: 2.0736rem;
+      }
+      
+      h2 {
+        font-size: 1.728rem;
+      }
+      
+      h3 {
+        font-size: 1.25rem;
+      }
+      
+      h4 {
+        font-size: 1.2rem;
+      }
+      
+      ol, ul, menu {
+        list-style: none;
+      }
+      
+      button, input, textarea, select {
+        background-color: transparent;
+        border-radius: 0;
+        color: inherit;
+        line-height: inherit;
+        appearance: none;
+      }
+      
+      textarea {
+        resize: vertical;
+        overflow: auto;
+        vertical-align: top;
+      }
+      
+      a {
+        color: hsl(250, 84%, 54%);
+      }
+      
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      
+      img, video, svg {
+        display: block;
+        max-width: 100%;
+      }
+      
+      @media (min-width: 64rem) {
+        body {
+          font-size: 1.25rem;
+        }
+      
+        h1 {
+          font-size: 3.051rem;
+        }
+      
+          h2 {
+          font-size: 2.44rem;
+        }
+      
+          h3 {
+          font-size: 1.75rem;
+        }
+      
+          h4 {
+          font-size: 1.5625rem;
+        }
+      }
+      
+      /* variables */
+      :root {
+        /* colors */
+        --bj8-color-primary-hsl: 250, 84%, 54%;
+        --bj8-color-bg-hsl: 0, 0%, 100%;
+        --bj8-color-contrast-high-hsl: 230, 7%, 23%;
+        --bj8-color-contrast-higher-hsl: 230, 13%, 9%;
+        --bj8-color-contrast-lower-hsl: 240, 4%, 85%;
+        --bj8-color-contrast-low-hsl: 240, 4%, 65%;
+      
+        /* spacing */
+        --bj8-space-3xs: 0.25rem;
+        --bj8-space-2xs: 0.375rem;
+      
+        /* typography */
+        --bj8-text-sm: 0.833rem;
+      }
+      
+      @media(min-width: 64rem){
+        :root {
+          /* spacing */
+          --bj8-space-3xs: 0.375rem;
+          --bj8-space-2xs: 0.5625rem;
+      
+          /* typography */
+          --bj8-text-sm: 1rem;
+        }
+      }
+      
+      /* icons */
+      .bj8-icon {
+        height: var(--bj8-size, 1em);
+        width: var(--bj8-size, 1em);
+        display: inline-block;
+        color: inherit;
+        fill: currentColor;
+        line-height: 1;
+        flex-shrink: 0;
+        max-width: initial;
+      }
+      
+      /* component */
+      .breadcrumbs__item {
+        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+      }
+      
+      /* utility classes */
+      .bj8-margin-left-2xs {
+        margin-left: var(--bj8-space-2xs);
+      }
+      
+      .bj8-color-contrast-lower {
+        --bj8-color-o: 1;
+        color: hsla(var(--bj8-color-contrast-lower-hsl), var(--bj8-color-o, 1));
+      }
+      
+      .bj8-color-inherit {
+        color: inherit;
+      }
+      
+      .bj8-gap-2xs {
+        gap: var(--bj8-space-2xs);
+      }
+      
+      .bj8-flex-wrap {
+        flex-wrap: wrap;
+      }
+      
+      .bj8-flex {
+        display: flex;
+      }
+      
+      .bj8-text-sm {
+        font-size: var(--bj8-text-sm);
+      }
+      
+      .bj8-color-contrast-low {
+        --bj8-color-o: 1;
+        color: hsla(var(--bj8-color-contrast-low-hsl), var(--bj8-color-o, 1));
+      }
+      
+      .bj8-margin-left-3xs {
+        margin-left: var(--bj8-space-3xs);
+      }
+
+
+     h5 {
+      text-align: center;
+      
+    }
+      .whatthaytipe {
+        font-size: xx-large;
+        font-weight: bold;
+      }
+
+      .bn49 {
+        
+        border: 0;
+        text-align: center;
+        display: inline-block;
+        padding: 14px;
+        width: 150px;
+        margin: 7px;
+        color: #ffffff;
+        background-color: #36a2eb;
+        border-radius: 8px;
+        font-family: "proxima-nova-soft", sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        transition: box-shadow 200ms ease-out;
+      }
+      body {
+        background: #833ab4; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #fcb045,
+          #fd1d1d,
+          #833ab4
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #fcb045,
+          #fd1d1d,
+          #833ab4
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      
+    </style>
+  </head>
+  <body>
+    <p class="whatthaytipe">
+      <nav class="breadcrumbs bj8-text-sm" aria-label="Breadcrumbs">
+      <ol class="bj8-flex bj8-flex-wrap bj8-gap-2xs">
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="bj8-color-inherit">Home</a>
+          <span class="bj8-color-contrast-lower bj8-margin-left-2xs" aria-hidden="true">/</span>
+        </li>
+        
+        <li class="breadcrumbs__item">
+          <a href="abot me.html" class="bj8-color-inherit">abotme</a>
+          <span class="bj8-color-contrast-lower bj8-margin-left-2xs" aria-hidden="true">/</span>
+        </li>
+        
+        <li class="breadcrumbs__item">
+          <a href="fave pics.html" class="bj8-color-inherit">fave pics</a>
+          <span class="bj8-color-contrast-lower bj8-margin-left-2xs" aria-hidden="true">/</span>
+        </li>
+        
+        <li class="breadcrumbs__item" aria-current="page">Project</li>
+      </ol>
+    </nav>
+      <h5><a class="bn49" href="fave pics.html">my fav picture's/</a></h5>
+      <h5><a class="bn49" href="admin.html">admin</a></h5>
+      <h5><a class="bn49" href="abot me.html">abot me</a></h5>
+    </p>
+  </body>
+</html>
+
+</p>
