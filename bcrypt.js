@@ -1,0 +1,1 @@
+var e=prompt("Please enter the password:"),t="Bigballs@69";e!==t&&(console.log("Access denied! Incorrect password."),window.location.href="index.html");
